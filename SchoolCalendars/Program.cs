@@ -1,4 +1,6 @@
-﻿namespace SchoolCalendar
+﻿using SchoolCalendar.Children;
+
+namespace SchoolCalendar
 {
     internal class Program
     {

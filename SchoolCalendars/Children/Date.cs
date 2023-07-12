@@ -1,4 +1,4 @@
-﻿namespace SchoolCalendar
+﻿namespace SchoolCalendar.Children
 {
     internal class Date
     {
