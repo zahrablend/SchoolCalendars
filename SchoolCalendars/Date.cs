@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SchoolCalendar
+﻿namespace SchoolCalendar
 {
     internal class Date
     {
@@ -17,6 +11,11 @@ namespace SchoolCalendar
             _year = year;
             _month = month;
             _day = day;
+        }
+
+        public override string ToString()
+        {
+            return _month + "/" + _day + "/" + _year;
         }
     }
 }

@@ -4,10 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Date birthdate = new Date(2018, 2, 29);
+            Date birthdate = new Date(2016, 2, 29);
             Child schoolchild = new Child("Anna", birthdate);
 
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine(birthdate);
+            Console.WriteLine(schoolchild);
+            Console.ReadLine();
         }
     }
 }
