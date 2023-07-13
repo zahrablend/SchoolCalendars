@@ -18,9 +18,6 @@ namespace SchoolCalendar.Children
             throw new NotImplementedException();
         }
 
-        public override string ToString()
-        {
-            return _day + "/" + _year;
-        }
+        public override string ToString() => _day + "/" + _year;
     }
 }

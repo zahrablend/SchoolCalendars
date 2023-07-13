@@ -17,9 +17,6 @@ namespace SchoolCalendar.SchoolLegalSystem
             _day = day;
         }
 
-        public override string ToString()
-        {
-            return _month + "/" + _day;
-        }
+        public override string ToString() => _month + "/" + _day;
     }
 }

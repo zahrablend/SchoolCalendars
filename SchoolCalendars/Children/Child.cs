@@ -23,9 +23,11 @@ namespace SchoolCalendar.Children
             throw new NotImplementedException();
         }
 
-        public override string ToString()
-        {
-            return _name + " born on " + _birthdate; ;
-        }
+        //public override string ToString()
+        //{
+        //    return _name + " born on " + _birthdate;
+        //}
+
+        public override string ToString() => _name + " born on " + _birthdate;
     }
 }
