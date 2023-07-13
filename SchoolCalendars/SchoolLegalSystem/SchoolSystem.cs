@@ -15,12 +15,28 @@ namespace SchoolCalendar.SchoolLegalSystem
             _minAge = minAge;
             _schoolStart = schoolStart;
         }
-        public Date GetBeginning(Child schoolchild)
-        {
-            Date oldEnough = schoolchild.GetDateByAge(_minAge);
-            Date cutoff = oldEnough.GetFirstOccurence(_cutoff);
-            Date schoolday = cutoff.GetFirstOccurence(_schoolStart);
-            return schoolday;
-        }
+
+        // 3: Expression-bodied method
+        public Date GetBeginning(Child schoolchild) =>
+            schoolchild
+                .GetDateByAge(_minAge)
+                .GetFirstOccurence(_cutoff)
+                .GetFirstOccurence(_schoolStart);
+
+        // 2:
+        //public Date GetBeginning(Child schoolchild)
+        //{ // Chaining method calls
+        //    return schoolchild
+        //        .GetDateByAge(_minAge)
+        //        .GetFirstOccurence(_cutoff)
+        //        .GetFirstOccurence(_schoolStart);
+
+        // 1:
+        //    // Procedures:
+        //    //Date oldEnough = schoolchild.GetDateByAge(_minAge);
+        //    //Date cutoff = oldEnough.GetFirstOccurence(_cutoff);
+        //    //Date schoolday = cutoff.GetFirstOccurence(_schoolStart);
+        //    //return schoolday;
+        //}
     }
 }
