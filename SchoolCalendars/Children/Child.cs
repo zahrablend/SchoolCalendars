@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolCalendar.SchoolLegalSystem;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,11 @@ namespace SchoolCalendar.Children
         {
             _name = name;
             _birthdate = birthdate;
+        }
+
+        public Date GetDateByAge(int age)
+        {
+            throw new NotImplementedException();
         }
 
         public override string ToString()
