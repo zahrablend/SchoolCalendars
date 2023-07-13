@@ -13,6 +13,11 @@ namespace SchoolCalendar.Children
             _day = day;
         }
 
+        public Date GetFirstOccurence(YearDate day)
+        {
+            throw new NotImplementedException();
+        }
+
         public override string ToString()
         {
             return _day + "/" + _year;

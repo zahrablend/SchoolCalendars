@@ -19,7 +19,7 @@ namespace SchoolCalendar.SchoolLegalSystem
         {
             Date oldEnough = schoolchild.GetDateByAge(_minAge);
             Date cutoff = oldEnough.GetFirstOccurence(_cutoff);
-            Date schoolday = cutoff.getFirstOccirence(_schoolStart);
+            Date schoolday = cutoff.GetFirstOccurence(_schoolStart);
             return schoolday;
         }
     }
