@@ -1,4 +1,5 @@
 ﻿using SchoolCalendar.Children;
+using SchoolCalendar.SchoolLegalSystem;
 
 namespace SchoolCalendar
 {
@@ -6,7 +7,7 @@ namespace SchoolCalendar
     {
         static void Main(string[] args)
         {
-            Date birthdate = new Date(2016, 2, 29);
+            Date birthdate = new Date(2016, new YearDate(2, 29));
             Child schoolchild = new Child("Anna", birthdate);
 
             Console.WriteLine(birthdate);
