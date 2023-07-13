@@ -28,6 +28,7 @@ namespace SchoolCalendar.Children
         private bool IsLeap(int year) =>
             year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
 
+        // overloaded method
         public Date GetFirstOccurence(YearDate day) =>
             GetFirstDayOccurence(day.IsBefore(_day) ? _year + 1 : _year, day);
 
