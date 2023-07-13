@@ -18,17 +18,22 @@ namespace SchoolCalendar.Children
 
         // Private as useful only for this class
         // Pattern matching with ternary operator
-        private Date FirstValidDate(YearDate day) => day.IsLeap() && !IsLeap(year) ? new Date(year, day.GetNext())
+        private Date FirstValidDate(int year, YearDate day) => 
+            day.IsLeap() && !IsLeap(year) ? new Date(year, day.GetNext())
                 : new Date(year, day);
+
+        public Date GetFirstDayOccurence(Date day) => 
+            GetFirstDayOccurence(_year, day._day);
 
         private bool IsLeap(int year) =>
             year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
-        
+
         public Date GetFirstOccurence(YearDate day) =>
             GetFirstDayOccurence(day.IsBefore(_day) ? _year + 1 : _year, day);
 
-        private Date GetFirstOccurence(int year, YearDate day) =>
-            new Date(day.IsLeap() ? GetLeap(year) : year, day);
+        private Date GetFirstDayOccurence(int year, YearDate day) =>
+             new Date(day.IsLeap() ? GetLeap(year) : year, day);
+
 
         // Recusion (calling a method from within itself: same object - different arguments)
         // IsLeap(year) is a termination condition
