@@ -5,9 +5,9 @@ namespace SchoolCalendar.SchoolLegalSystem
     internal class SchoolSystem
     {
         // state
-        private YearDate _cutoff;
-        private int _minAge;
-        private YearDate _schoolStart;
+        private readonly YearDate _cutoff;
+        private readonly int _minAge;
+        private readonly YearDate _schoolStart;
 
         public SchoolSystem(YearDate cutoff, int minAge, YearDate schoolStart)
         {
