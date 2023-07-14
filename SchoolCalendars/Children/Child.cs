@@ -9,8 +9,8 @@ namespace SchoolCalendar.Children
 {
     internal class Child
     {
-        private string _name;
-        private Date _birthdate;
+        private readonly string _name;
+        private readonly Date _birthdate;
 
         public Child(string name, Date birthdate)
         {

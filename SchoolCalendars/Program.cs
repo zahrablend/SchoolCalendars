@@ -15,11 +15,11 @@ namespace SchoolCalendar
 
         static void Demonstrate(Calendar cal)
         {
-            SchoolSystem school =
+            var school =
                 new SchoolSystem(cal.Create(3, 1), 5, cal.Create(8, 15));
 
-            Child jill = new Child("Jill", cal.Create(1892, 2, 29));
-            Child jake = new Child("Jake", cal.Create(1891, 8, 27));
+            var jill = new Child("Jill", cal.Create(1892, 2, 29));
+            var jake = new Child("Jake", cal.Create(1891, 8, 27));
 
             Console.WriteLine("Using " + cal.GetName() + " calendar:");
             Report(jill, school);
