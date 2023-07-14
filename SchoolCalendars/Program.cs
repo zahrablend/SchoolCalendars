@@ -31,16 +31,6 @@ namespace SchoolCalendar
             Demonstrate(new GregorianCalendar());
             Demonstrate(new JulianCalendar());
             Console.ReadLine();
-            //Date birthdate = new Date(2016, new YearDate(2, 29));
-            //Child schoolchild = new Child("Anna", birthdate);
-
-            //Date schoolStart = school.GetBeginning(schoolchild);
-
-            //Console.WriteLine(birthdate);
-            //Console.WriteLine(schoolchild);
-            //Console.WriteLine(schoolStart);
-
-            //Console.ReadLine();
         }
     }
 }

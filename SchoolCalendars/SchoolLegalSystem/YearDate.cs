@@ -9,9 +9,9 @@ namespace SchoolCalendar.SchoolLegalSystem
 {
     internal class YearDate
     {
-        private int _month;
-        private int _day;
-        private Calendar _calendar;
+        private readonly int _month;
+        private readonly int _day;
+        private readonly Calendar _calendar;
 
         public YearDate(Calendar calendar, int month, int day)
         {

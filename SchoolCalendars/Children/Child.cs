@@ -28,11 +28,6 @@ namespace SchoolCalendar.Children
 
         public Date GetFirstCelebrationAt(SchoolSystem school) =>
             school.GetBeginning(this).GetFirstDayOccurence(_birthdate);
-
-        //public override string ToString()
-        //{
-        //    return _name + " born on " + _birthdate;
-        //}
         public override string ToString() => _name + " born on " + _birthdate;
 
         
