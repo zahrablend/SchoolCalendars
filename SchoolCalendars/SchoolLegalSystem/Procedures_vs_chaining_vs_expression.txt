@@ -19,4 +19,4 @@
            Date cutoff = oldEnough.GetFirstOccurence(_cutoff);
            Date schoolday = cutoff.GetFirstOccurence(_schoolStart);
            return schoolday;
-        }
+        }chainingMethodCalls

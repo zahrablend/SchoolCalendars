@@ -24,7 +24,7 @@ namespace SchoolCalendar.Children
         // Private as useful only for this class
         // Pattern matching with ternary operator
         private Date FirstValidDate(int year, YearDate day) => 
-            new Date(_calendar, year, day.IsLeap() && !_calendar.IsLeapYear(year) ? day.GetNext() : day);
+            new(_calendar, year, day.IsLeap() && !_calendar.IsLeapYear(year) ? day.GetNext() : day);
 
         public Date GetFirstDayOccurence(Date day) => 
             GetFirstDayOccurence(_year, day._day);
